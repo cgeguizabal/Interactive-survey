@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orage: hsl(25, 97%, 53%);
+  --light--gray: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", serif;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.main-container {
+  background: linear-gradient(120deg, var(--dark-blue), hsl(204, 19%, 8%));
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-width: auto;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 40rem;
+  opacity: 1;
+  visibility: visible;
+
+  position: relative;
+  transition: visibility 0s, opacity 1s ease-in-out;
+}
+
+.image-container {
+  background-color: hsla(211, 19%, 24%, 0.461);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  width: 4rem;
+}
+
+.content-text h1 {
+  color: white;
+}
+
+.content-text p {
+  margin-top: 2rem;
+  color: var(--light--gray);
+}
+
+.numbers {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.number {
+  color: var(--light--gray);
+  background-color: hsla(211, 19%, 24%, 0.461);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.white {
+  background-color: white;
+  color: var(--very-dark-blue);
+}
+
+.number:hover {
+  background-color: var(--orage);
+  cursor: pointer;
+  color: var(--very-dark-blue);
+}
+
+.submit-btn-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.btn-submit {
+  background-color: var(--orage);
+  border: none;
+  padding: 1rem 15rem;
+  border-radius: 5rem;
+  color: var(--very-dark-blue);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn-submit:hover {
+  color: var(--very-dark-blue);
+  background-color: white;
+  cursor: pointer;
+}
+
+.thanks-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+  padding: 0 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 1s ease-in-out;
+}
+
+.selected {
+  margin-top: 3rem;
+  background-color: hsla(211, 19%, 24%, 0.461);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  color: var(--orage);
+}
+
+.thanks {
+  margin-top: 4rem;
+  color: white;
+}
+
+.message {
+  color: var(--light--gray);
+  margin-top: 1rem;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}

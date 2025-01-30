@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 8rem;
+        color: hsl(25, 97%, 53%);
+      }
+      .attribution a {
+        color: hsl(220, 43%, 99%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div>
+      <main class="main-container">
+        <div class="form-container">
+          <div>
+            <img
+              class="image-container"
+              src="./img/icon-star.svg"
+              alt="icon-Star"
+            />
+          </div>
+          <div class="content-text">
+            <h1>How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="numbers">
+            <a class="number">1</a>
+            <a class="number">2</a>
+            <a class="number">3</a>
+            <a class="number">4</a>
+            <a class="number">5</a>
+          </div>
+          <div class="submit-btn-container">
+            <button class="btn-submit">SUBMIT</button>
+          </div>
+        </div>
+        <div class="thanks-container">
+          <div><img src="./img/illustration-thank-you.svg" alt="" /></div>
+          <p class="selected">
+            You selected <span class="score">0</span> out of 5
+          </p>
+          <h1 class="thanks">Thank you!</h1>
+          <p class="message">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </main>
+
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/profile/cgeguizabal"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Guillermo Eguizabal</a>.
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
