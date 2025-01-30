@@ -99,7 +99,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.btn-submit {
+.btn-submit,
+.btn-submit:visited {
   background-color: var(--orage);
   border: none;
   padding: 1rem 15rem;
